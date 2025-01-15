@@ -6,3 +6,14 @@
 // poi un altra funzione dove chiediamo di inserire una parola e verifichiamo se sia palindroma
 
 // preghiamo...
+
+function isPalindroma(parola) {
+  parola = parola.toLowerCase();
+
+  let parolaInvertita = parola.split("").reverse().join("");
+  return parola == parolaInvertita;
+}
+
+function verificaPalindroma() {
+  let parola = prompt("Inserisci una parola:");
+}
