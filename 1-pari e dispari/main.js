@@ -21,4 +21,13 @@ function Gioco() {
     alert("Devi inserire un numero valido.");
     return;
   }
+
+  let numeroComputer = numeroCasuale();
+  console.log("Numero del computer:", numeroComputer);
+
+  let somma = numeroUtente + numeroComputer;
+  console.log("Somma:", somma);
+
+  let risultatoSomma = pariOdispari(somma);
+  console.log("La somma è:", risultatoSomma);
 }
