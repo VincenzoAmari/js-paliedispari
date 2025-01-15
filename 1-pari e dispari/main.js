@@ -12,3 +12,13 @@
 function numeroCasuale() {
   return Math.floor(Math.random() * 5) + 1;
 }
+
+function Gioco() {
+  let sceltaUtente = prompt("Scegli pari o dispari:");
+  let numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5:"));
+
+  if (numeroUtente < 1 || numeroUtente > 5) {
+    alert("Devi inserire un numero valido.");
+    return;
+  }
+}
