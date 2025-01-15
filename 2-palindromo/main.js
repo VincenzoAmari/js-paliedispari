@@ -5,15 +5,22 @@
 // lo split reverse e join per invertirla
 // poi un altra funzione dove chiediamo di inserire una parola e verifichiamo se sia palindroma
 
-// preghiamo...
-
 function isPalindroma(parola) {
   parola = parola.toLowerCase();
 
   let parolaInvertita = parola.split("").reverse().join("");
+  console.log(parolaInvertita);
   return parola == parolaInvertita;
 }
 
-function verificaPalindroma() {
+function Palindroma() {
   let parola = prompt("Inserisci una parola:");
+
+  if (isPalindroma(parola)) {
+    alert("La parola è palindroma!");
+  } else {
+    alert("La parola non è palindroma.");
+  }
 }
+
+Palindroma();
