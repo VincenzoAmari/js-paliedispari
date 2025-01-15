@@ -30,4 +30,12 @@ function Gioco() {
 
   let risultatoSomma = pariOdispari(somma);
   console.log("La somma è:", risultatoSomma);
+
+  if (sceltaUtente === risultatoSomma) {
+    alert("Hai vinto!");
+  } else {
+    alert("Hai perso! La somma era " + risultatoSomma);
+  }
 }
+
+Gioco();
