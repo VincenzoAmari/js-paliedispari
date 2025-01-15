@@ -13,6 +13,10 @@ function numeroCasuale() {
   return Math.floor(Math.random() * 5) + 1;
 }
 
+function pariOdispari(num) {
+  return num % 2 === 0 ? "pari" : "dispari";
+}
+
 function Gioco() {
   let sceltaUtente = prompt("Scegli pari o dispari:");
   let numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5:"));
@@ -31,7 +35,7 @@ function Gioco() {
   let risultatoSomma = pariOdispari(somma);
   console.log("La somma è:", risultatoSomma);
 
-  if (sceltaUtente === risultatoSomma) {
+  if (sceltaUtente.toLowerCase() === risultatoSomma) {
     alert("Hai vinto!");
   } else {
     alert("Hai perso! La somma era " + risultatoSomma);
