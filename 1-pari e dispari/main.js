@@ -8,3 +8,7 @@
 // generare il numero casuale per il pc
 // somma dei 2 numeri
 // e alla somma vediamo se sia pari o dispari, decretiamo il vincitore
+
+function numeroCasuale() {
+  return Math.floor(Math.random() * 5) + 1;
+}
