@@ -19,6 +19,15 @@ function pariOdispari(num) {
 
 function Gioco() {
   let sceltaUtente = prompt("Scegli pari o dispari:");
+
+  if (
+    sceltaUtente.toLowerCase() !== "pari" &&
+    sceltaUtente.toLowerCase() !== "dispari"
+  ) {
+    alert("non sai leggere quindi non giochi.");
+    return;
+  }
+
   let numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5:"));
 
   if (numeroUtente < 1 || numeroUtente > 5) {
