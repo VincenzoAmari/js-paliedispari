@@ -52,3 +52,5 @@ function Gioco() {
 }
 
 Gioco();
+
+//è stato tosto
